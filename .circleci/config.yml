@@ -33,6 +33,8 @@ machine: &machine
   machine: true
   steps:
     - run: |
+        echo 'start!'
+        curl google.com 80
         echo $SLEEP
         date
         sleep $SLEEP
